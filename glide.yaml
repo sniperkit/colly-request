@@ -1,13 +1,50 @@
 package: github.com/sniperkit/colly-request
 ignore:
 - gob
+- github.com/sniperkit/colly
+- github.com/sniperkit/colly-header
+- github.com/sniperkit/colly-storage
+- github.com/sniperkit/codecs
 import:
+- package: github.com/bitly/go-simplejson
+- package: github.com/boltdb/bolt
+- package: github.com/gin-gonic/gin
+  subpackages:
+  - binding
+- package: github.com/gorilla/websocket
+- package: github.com/nelsam/requests
+  subpackages:
+  - options
 - package: github.com/segmentio/stats
   subpackages:
   - httpstats
+- package: github.com/sniperkit/codecs
+  subpackages:
+  - pkg
+  - pkg/services
+  - plugin/service
 - package: github.com/sniperkit/colly-storage
   subpackages:
   - pkg
   - plugin/backend/badger
   - plugin/backend/boltdb
   - plugin/backend/boltdb_bbolt
+- package: github.com/urfave/cli
+- package: golang.org/x/net
+  subpackages:
+  - proxy
+  - publicsuffix
+testImport:
+- package: github.com/aybabtme/iocontrol
+- package: github.com/bmizerany/assert
+- package: github.com/facebookgo/ensure
+- package: github.com/facebookgo/freeport
+- package: github.com/franela/goblin
+- package: github.com/onsi/gomega
+- package: github.com/sniperkit/colly-header
+  subpackages:
+  - plugin/transport/control
+- package: github.com/stretchr/testify
+  subpackages:
+  - assert
+  - require

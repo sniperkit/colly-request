@@ -1,112 +1,127 @@
-hash: 4a03ce939dedde01d3443bbcd75cb9fd41206cfee5237afe8fb999f76e3ade38
-updated: 2018-06-17T15:36:42.640109807+02:00
+hash: aae90353801f66f4e153256668dba62a5cf5a47e8bbffb68732abedaab6a02d0
+updated: 2018-06-17T17:17:10.57314906+02:00
 imports:
-- name: github.com/AndreasBriese/bbloom
-  version: 28f7e881ca57bc00e028f9ede9f0d9104cfeef5e
+- name: github.com/bitly/go-simplejson
+  version: 0c965951289cce37dec52ad1f34200fefc816777
 - name: github.com/boltdb/bolt
   version: 9da31745363232bc1e27dbab3569e77383a51585
-- name: github.com/coreos/bbolt
-  version: af9db2027c98c61ecd8e17caa5bd265792b9b9a2
-- name: github.com/daaku/go.zipexe
-  version: a5fe2436ffcb3236e175e5149162b41cd28bd27d
-- name: github.com/dgraph-io/badger
-  version: 3340933a01945fb517775a0e0f079a701d04f094
+- name: github.com/gin-contrib/sse
+  version: 22d885f9ecc78bf4ee5d72b937e4bbcdc58e8cae
+- name: github.com/gin-gonic/gin
+  version: caf3e350a548af1add9def68087ac53d1d000caa
   subpackages:
-  - options
-  - protos
-  - skl
-  - table
-  - "y"
-- name: github.com/dgryski/go-farm
-  version: 2de33835d10275975374b37b2dcfd22c9020a1f5
-- name: github.com/GeertJohan/go.rice
-  version: c02ca9a983da5807ddf7d796784928f5be4afd09
-  subpackages:
-  - embedded
+  - binding
+  - json
+  - render
 - name: github.com/golang/protobuf
   version: 655cdfa588ea190e901bc5590e65d5621688847c
   subpackages:
   - proto
-- name: github.com/golang/snappy
-  version: cef980a12b316c5b7e5bb3a8e168eb43ae999a88
-- name: github.com/hashicorp/go-msgpack
-  version: fa3f63826f7c23912c15263591e65d54d080b458
-  subpackages:
-  - codec
-- name: github.com/imdario/mergo
-  version: 7fe0c75c13abdee74b09fcacef5ea1c6bba6a874
-- name: github.com/jbrukh/bayesian
-  version: 2177c82d4d5a30402758106ccc425c8be57c0181
+- name: github.com/gorilla/websocket
+  version: 5ed622c449da6d44c3c8329331ff47a9e5844f71
 - name: github.com/json-iterator/go
   version: 8744d7c5c7b40a53e018f78d8c508b3315260b96
-- name: github.com/k0kubun/pp
-  version: e057ee7a28277be4d2af303443b6da377768181f
-- name: github.com/kardianos/osext
-  version: ae77be60afb1dcacde03767a8c37337fad28ac14
-- name: github.com/mattn/go-colorable
-  version: efa589957cd060542a26d2dd7832fd6a6c6c3ade
 - name: github.com/mattn/go-isatty
   version: 6ca4dbf54d38eea1a992b3c722a76a5d1c4cb25c
 - name: github.com/modern-go/concurrent
   version: bacd9c7ef1dd9b15be4a9909b8ac7a4e313eec94
 - name: github.com/modern-go/reflect2
   version: 58118c1ea9161250907268a484af4dd6ed314280
-- name: github.com/opennota/substring
-  version: 698205bf2f2088746c0435a715f4d53c99d58e07
-- name: github.com/pkg/errors
-  version: 645ef00459ed84a119197bfb8d8205042c6df63d
-- name: github.com/rai-project/linguist
-  version: db241cd74f9a26efc450987fa2223e06693880ba
+- name: github.com/nelsam/requests
+  version: 52010a8e4ca6864fbb9b0b6fddd918cf21b7faf2
   subpackages:
-  - pkg
-  - pkg/data
-  - pkg/tokenizer
+  - options
 - name: github.com/segmentio/stats
   version: 8f63d5b1a809747ff6d5ae4f57225e946c2675cc
   subpackages:
   - httpstats
-- name: github.com/sirupsen/logrus
-  version: c155da19408a8799da419ed3eeb0cb5db0ad5dbc
-- name: github.com/sniperkit/colly-storage
-  version: bff105231e2f5bb1632bfa5bd9d8a9a5c0a151fe
+- name: github.com/ugorji/go
+  version: f3cacc17c85ecb7f1b6a9e373ee85d1480919868
   subpackages:
-  - pkg
-  - plugin/backend/badger
-  - plugin/backend/boltdb
-  - plugin/backend/boltdb_bbolt
-- name: github.com/tidwall/match
-  version: 1731857f09b1f38450e2c12409748407822dc6be
-- name: github.com/toqueteos/trie
-  version: 56fed4a05683322f125e2d78ee269bb102280392
-- name: github.com/wttw/orderedheaders
-  version: 51af6d9e125d6262bd8bb0d2ac3bb9eb7ec74b92
-- name: golang.org/x/crypto
-  version: c3a3ad6d03f7a915c0f7e194b7152974bb73d287
-  subpackages:
-  - ssh/terminal
+  - codec
+- name: github.com/urfave/cli
+  version: 8e01ec4cd3e2d84ab2fe90d8210528ffbb06d8ff
 - name: golang.org/x/net
   version: 92b859f39abd2d91a854c9f9c4621b2f5054a92d
   subpackages:
   - context
-  - internal/timeseries
-  - trace
+  - context/ctxhttp
+  - html
+  - html/atom
+  - html/charset
+  - proxy
+  - publicsuffix
 - name: golang.org/x/sys
   version: d8e400bc7db4870d786864138af681469693d18c
   subpackages:
   - unix
-  - windows
-- name: gopkg.in/kothar/brotli-go.v0
-  version: 771231d473d6c4896e97c2b6e3855f1afc0cdada
-  subpackages:
-  - enc
-  - shared
-- name: gopkg.in/src-d/enry.v1
-  version: 6712d4219fb747194f38d0fc72121ca0a46ebcea
-  subpackages:
-  - data
-  - internal/tokenizer
-- name: gopkg.in/toqueteos/substring.v1
-  version: c5f61671513240ddf5563635cc4a90e9f3ae4710
+- name: gopkg.in/go-playground/validator.v8
+  version: 5f1438d3fca68893a817e4a66806cea46a9e4ebf
 - name: gopkg.in/yaml.v2
   version: 5420a8b6744d3b0345ab293f6fcba19c978f1183
-testImports: []
+testImports:
+- name: github.com/aybabtme/iocontrol
+  version: ad15bcfc95a08d0b9d072012fb7618512aafb99b
+- name: github.com/benbjohnson/clock
+  version: 7dc76406b6d3c05b5f71a86293cbcf3c4ea03b19
+- name: github.com/bmizerany/assert
+  version: b7ed37b82869576c289d7d97fb2bbd8b64a0cb28
+- name: github.com/davecgh/go-spew
+  version: 6d212800a42e8ab5c146b8ace3490ee17e5225f9
+  subpackages:
+  - spew
+- name: github.com/facebookgo/ensure
+  version: b4ab57deab51ee655ae4bd85281f0715a068016d
+- name: github.com/facebookgo/freeport
+  version: d4adf43b75b9357dc7775f033e807a3411591522
+- name: github.com/facebookgo/stack
+  version: 751773369052141c013c6e827a71e8f35c07879c
+- name: github.com/facebookgo/subset
+  version: 8dac2c3c48703541e481feddf22975953d4ff842
+- name: github.com/franela/goblin
+  version: cd5d08fb4ede9eaac1812fdb513552e7404eae2e
+- name: github.com/kr/pretty
+  version: 73f6ac0b30a98e433b289500d779f50c1a6f0712
+- name: github.com/kr/text
+  version: e2ffdb16a802fe2bb95e2e35ff34f0e53aeef34f
+- name: github.com/onsi/gomega
+  version: 9be84105672ba4433a3b61f1b4d7f9ff8b022293
+  subpackages:
+  - format
+  - internal/assertion
+  - internal/asyncassertion
+  - internal/oraclematcher
+  - internal/testingtsupport
+  - matchers
+  - matchers/support/goraph/bipartitegraph
+  - matchers/support/goraph/edge
+  - matchers/support/goraph/node
+  - matchers/support/goraph/util
+  - types
+- name: github.com/pmezard/go-difflib
+  version: d8ed2627bdf02c080bf22230dbb337003b7aba2d
+  subpackages:
+  - difflib
+- name: github.com/stretchr/testify
+  version: 69483b4bd14f5845b5a1e55bca19e954e827f1d0
+  subpackages:
+  - assert
+  - require
+- name: golang.org/x/text
+  version: 5ee49cfe751141f8017047bab800d1f528ee3be1
+  subpackages:
+  - encoding
+  - encoding/charmap
+  - encoding/htmlindex
+  - encoding/internal
+  - encoding/internal/identifier
+  - encoding/japanese
+  - encoding/korean
+  - encoding/simplifiedchinese
+  - encoding/traditionalchinese
+  - encoding/unicode
+  - internal/tag
+  - internal/utf8internal
+  - language
+  - runes
+  - transform

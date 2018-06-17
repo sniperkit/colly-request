@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	httpclient "github.com/sniperkit/colly-request/plugin/client/unmarshall/v1"
+	httpclient "github.com/sniperkit/colly-request/plugin/client/unmarshal/v1"
 )
 
 func main() {
