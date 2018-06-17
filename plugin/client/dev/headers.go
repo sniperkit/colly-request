@@ -1,6 +1,8 @@
 package request
 
-import "net/http"
+import (
+	"net/http"
+)
 
 // DefaultUserAgent define default User-Agent header
 var DefaultUserAgent = "go-request/" + Version

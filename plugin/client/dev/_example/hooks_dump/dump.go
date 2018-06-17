@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"net/http/httputil"
 
-	"github.com/mozillazg/request"
+	request "github.com/sniperkit/colly-request/plugin/client/dev"
 )
 
 type dumpHook struct {

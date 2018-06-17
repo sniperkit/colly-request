@@ -1,14 +1,14 @@
-package requests
+package httpclient
 
 import (
-	"github.com/stretchr/codecs"
-	"github.com/stretchr/codecs/services"
+	codecs "github.com/sniperkit/codecs/pkg"
+	codecs "github.com/sniperkit/codecs/plugin/service"
 )
 
 var codecService services.CodecService
 
 // Codecs returns the
-// "github.com/stretchr/codecs/services".CodecService currently in use
+// codecs "github.com/sniperkit/codecs/pkg/services".CodecService currently in use
 // by this library.
 func Codecs() services.CodecService {
 	if codecService == nil {
@@ -18,14 +18,14 @@ func Codecs() services.CodecService {
 }
 
 // SetCodecs can be used to change the
-// "github.com/stretchr/codecs/services".CodecService used by this
+// codecs "github.com/sniperkit/codecs/pkg/services".CodecService used by this
 // library.
 func SetCodecs(newService services.CodecService) {
 	codecService = newService
 }
 
-// AddCodec adds a "github.com/stretchr/codecs".Codec to the
-// "github.com/stretchr/codecs/services".CodecService currently in use
+// AddCodec adds a codecs "github.com/sniperkit/codecs/pkg".Codec to the
+// codecs "github.com/sniperkit/codecs/pkg/services".CodecService currently in use
 // by this library.
 func AddCodec(codec codecs.Codec) {
 	Codecs().AddCodec(codec)

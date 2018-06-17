@@ -14,9 +14,12 @@ import (
 	"testing"
 	"time"
 
+	// external
 	"github.com/facebookgo/ensure"
 	"github.com/facebookgo/freeport"
-	"github.com/facebookgo/httpcontrol"
+
+	// internal
+	httpcontrol "github.com/sniperkit/colly-header/plugin/transport/control"
 )
 
 var theAnswer = []byte("42")

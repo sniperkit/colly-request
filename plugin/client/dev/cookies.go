@@ -1,6 +1,8 @@
 package request
 
-import "net/http"
+import (
+	"net/http"
+)
 
 func applyCookies(a *Args, req *http.Request) {
 	if a.Cookies == nil {

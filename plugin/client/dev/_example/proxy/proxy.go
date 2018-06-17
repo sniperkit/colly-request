@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/mozillazg/request"
+	request "github.com/sniperkit/colly-request/plugin/client/dev"
 )
 
 func httpProxy(URL string) {

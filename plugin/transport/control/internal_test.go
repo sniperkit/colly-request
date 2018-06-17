@@ -9,6 +9,7 @@ import (
 	"testing"
 	"time"
 
+	// external
 	"github.com/facebookgo/ensure"
 )
 

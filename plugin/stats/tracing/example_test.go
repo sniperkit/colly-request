@@ -7,7 +7,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/tcnksm/go-httpstat"
+	// internal
+	httpstat "github.com/sniperkit/colly-request/plugin/stats/tracing"
 )
 
 func Example() {

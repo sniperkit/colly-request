@@ -16,7 +16,7 @@
 // which values (from the above params) should be applied to which
 // fields in the target struct.  Unmarshalling to non-struct types is
 // not supported.
-package requests
+package httpclient
 
 import "net/http"
 

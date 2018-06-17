@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"regexp"
 
-	"github.com/mozillazg/request"
+	request "github.com/sniperkit/colly-request/plugin/client/dev"
 )
 
 const (

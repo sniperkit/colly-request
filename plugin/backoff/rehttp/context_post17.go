@@ -2,7 +2,9 @@
 
 package rehttp
 
-import "net/http"
+import (
+	"net/http"
+)
 
 func contextForRequest(req *http.Request) <-chan struct{} {
 	// req.Context always returns non-nil.

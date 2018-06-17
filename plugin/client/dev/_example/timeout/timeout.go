@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/mozillazg/request"
+	request "github.com/sniperkit/colly-request/plugin/client/dev"
 )
 
 func diff(req *request.Request) {

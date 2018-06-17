@@ -1,4 +1,4 @@
-package requests
+package httpclient
 
 // Defaulter is a type that returns its own default value, for when it
 // is not included in the request.  This can be used as an alternative

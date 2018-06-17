@@ -1,4 +1,4 @@
-package requests
+package httpclient
 
 // A ReceiveTyper has methods for returning the type that its
 // Receive method expects.  It *must* implement Receiver as well,

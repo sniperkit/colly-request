@@ -2,10 +2,10 @@ package request
 
 import (
 	"errors"
+	"net/http"
 	"testing"
 
 	"github.com/bmizerany/assert"
-	"net/http"
 )
 
 func TestCheckRedirectNoRedirect(t *testing.T) {

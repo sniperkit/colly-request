@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/PuerkitoBio/rehttp"
+	"github.com/sniperkit/colly-request/plugin/backoff/rehttp"
 )
 
 func Example() {

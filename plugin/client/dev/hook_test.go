@@ -4,10 +4,9 @@ import (
 	"bytes"
 	"encoding/json"
 	"errors"
+	"io/ioutil"
 	"net/http"
 	"testing"
-
-	"io/ioutil"
 
 	"github.com/bmizerany/assert"
 )

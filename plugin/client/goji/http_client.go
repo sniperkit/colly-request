@@ -1,1 +1,1 @@
-package http_client_goji
+package goji

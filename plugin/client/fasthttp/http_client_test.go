@@ -1,1 +1,1 @@
-package http_client_fasthttp
+package fasthttp

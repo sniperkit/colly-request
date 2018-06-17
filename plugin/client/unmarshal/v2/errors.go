@@ -1,6 +1,8 @@
-package requests
+package httpclient
 
-import "bytes"
+import (
+	"bytes"
+)
 
 // InputErrors is an error type that maps input names to errors
 // encountered while parsing their value.  A nil error will be stored

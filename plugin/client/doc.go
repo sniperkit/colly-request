@@ -1,2 +1,2 @@
 // http codecs plugin
-package http_client
+package httpclient
