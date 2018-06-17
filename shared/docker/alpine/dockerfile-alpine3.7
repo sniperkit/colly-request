@@ -4,14 +4,14 @@ FROM alpine:3.7
 RUN apk update \
 	&& apk add --no-cache --no-progress ca-certificates \
 	&& rm -rf /var/cache/apk/* \
-	&& mkdir -p /dfk
+	&& mkdir -p /colly
 
 # container binary
-ADD ./dtk-fetch.cli-linux /dfk/fetch.cli
+ADD ./colly-request.d-linux /colly/request.d
 
 # container configuration
-WORKDIR /dfk
+WORKDIR /colly
 EXPOSE 8000
-ENTRYPOINT /dfk/fetch.cli
+ENTRYPOINT /colly/request.d
 
 # CMD [""]
