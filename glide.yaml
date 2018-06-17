@@ -1,0 +1,13 @@
+package: github.com/sniperkit/colly-request
+ignore:
+- gob
+import:
+- package: github.com/segmentio/stats
+  subpackages:
+  - httpstats
+- package: github.com/sniperkit/colly-storage
+  subpackages:
+  - pkg
+  - plugin/backend/badger
+  - plugin/backend/boltdb
+  - plugin/backend/boltdb_bbolt
